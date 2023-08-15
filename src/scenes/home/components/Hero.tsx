@@ -48,7 +48,7 @@ const Hero = () => {
                   </a>
                </div>
             </motion.div>
-            <motion.div className=" md:h-[50vh] w-full md:w-1/2 items-center">
+            <motion.div className=" h-[50vh]  w-full md:w-1/2 items-center">
                <CameraCanvas />
             </motion.div>
             {/* <div className="absolute xs:bottom-10 bottom-32 flex w-full  justify-center items-center">
