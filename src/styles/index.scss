@@ -1,0 +1,51 @@
+@import './components/common.scss';
+@import './components/var.scss';
+@import './components/mixin.scss';
+
+
+body {
+   background-color: $white;
+   color: $black;
+}
+
+
+.header {
+   &__link {
+      font-weight: $fwbold;
+
+      &:hover {
+         color: $purple;
+         transition: all .4s ease;
+      }
+   }
+}
+
+.hero {}
+
+.icon {
+
+
+   svg {
+      width: 40px;
+      height: 40px;
+      fill: red;
+
+      &:hover {
+         fill: red !important;
+      }
+   }
+
+   img {
+      width: 40px;
+      height: 40px;
+
+      &:hover {
+         fill: gray;
+      }
+   }
+
+}
+
+.icon:hover {
+   fill: $lightgrey;
+}

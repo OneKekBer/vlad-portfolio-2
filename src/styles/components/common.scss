@@ -1,0 +1,46 @@
+@import 'var.scss';
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $ffpoppins;
+}
+
+.wrapper {
+    padding: 0 10%;
+    // margin-bottom: 10%;
+}
+
+
+.flex-between {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+// .flex {
+    //     display: flex;
+    //     gap: 20px;
+    //     align-items: center;
+    // }
+
+// .text-center {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     flex-direction: column;
+    // }
