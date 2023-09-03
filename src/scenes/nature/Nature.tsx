@@ -1,10 +1,7 @@
 import { motion } from "framer-motion";
 import Header from "../../common/Header";
-import Advantages from "./components/Advantages";
-import Hero from "./components/Hero";
-import Navigation from "./components/Navigation";
-
-const Home = () => {
+import Gallery from "./components/Gallery";
+const Nature = () => {
    return (
       <motion.div
          initial={{ opacity: 0, x: -100 }}
@@ -12,11 +9,9 @@ const Home = () => {
          exit={{ opacity: 0, x: 100 }}
       >
          <Header />
-         <Hero />
-         <Navigation />
-         <Advantages />
+         <Gallery />
       </motion.div>
    );
 };
 
-export default Home;
+export default Nature;

@@ -1,16 +1,16 @@
-import CameraCanvas from "../../../common/canvas/Camera";
 import { motion } from "framer-motion";
 import "../../../styles/index.scss";
 import inst from "../../../assets/inst.svg";
 import tt from "../../../assets/tt.svg";
 import tg from "../../../assets/tg.svg";
+import CameraCanvas from "src/common/canvas/Camera";
 
 const Hero = () => {
    return (
       <div className="hero">
-         <div className="wrapper text-center md:text-left mt-[80px] md:mt-1 relative w-full h-screen flex-col-reverse md:flex-row flex items-center  gap-10 ">
+         <div className="wrapper text-center md:text-left mt-[80px] md:mt-1 relative w-full h-screen mb-[10vh] md:mb-2 flex-col-reverse md:flex-row flex items-center  gap-10 ">
             <motion.div className=" w-full md:w-1/2">
-               <h1>Hi, Im vlad</h1>
+               <h1>Привет, я Влад и я фотограф</h1>
                <p>
                   Каждая фотография, созданная мной, несет в себе моё восхищение
                   природой и старой архитектурой. Я стремлюсь передать эмоции и
@@ -51,11 +51,6 @@ const Hero = () => {
             <motion.div className=" h-[50vh]  w-full md:w-1/2 items-center">
                <CameraCanvas />
             </motion.div>
-            {/* <div className="absolute xs:bottom-10 bottom-32 flex w-full  justify-center items-center">
-               <a href="#about">
-                  <img src={arrow} alt="" />
-               </a>
-            </div> */}
          </div>
       </div>
    );

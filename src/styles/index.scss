@@ -49,3 +49,48 @@ body {
 .icon:hover {
    fill: $lightgrey;
 }
+
+
+// .nav {
+//    img {
+//       &::after {
+//          background-color: gray;
+//          position: absolute;
+//          inset: 0;
+//          z-index: 10;
+//          content: '';
+//       }
+//    }
+// }
+.nav__img {
+   position: relative;
+}
+
+.nav__img::after {
+   content: '';
+   position: absolute;
+   inset: 0;
+   opacity: 1;
+   transition: all .4s;
+   background: transparent;
+}
+
+.nav__img::before {
+   content: '';
+   position: absolute;
+   inset: 0;
+   opacity: 0;
+   transition: all 1s;
+
+   background: rgba(205, 205, 205, 0.6);
+}
+
+.nav__img:hover.nav__img::after {
+   opacity: 0;
+
+}
+
+.nav__img:hover.nav__img::before {
+   opacity: 1;
+
+}
