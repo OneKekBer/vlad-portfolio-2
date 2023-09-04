@@ -35,11 +35,11 @@ const Gallery = () => {
 
    return (
       <div>
-         <div className="wrapper gap-1 md:gap-5 grid-rows-1 mt-[150px] grid grid-cols-1 md:grid-cols-3 ">
+         <div className="wrapper gap-1 md:gap-5 grid-rows-1 mt-[150px] grid grid-cols-1 md:grid-cols-3">
             <GalleryItem delay={1} row={1} col={2} img={arch1} />
             <GalleryItem delay={1.2} row={2} col={1} img={arch3} />
             <GalleryItem delay={1.5} row={1} col={3} img={arch2} />
-            <GalleryItem delay={1.7} row={2} col={1} img={arch2} />
+            <GalleryItem delay={1.7} row={3} col={1} img={arch2} />
             <GalleryItem delay={2} row={1} col={1} img={arch1} />
             <GalleryItem delay={1.2} row={1} col={1} img={arch4} />
             <GalleryItem delay={1.4} row={1} col={3} img={arch2} />
