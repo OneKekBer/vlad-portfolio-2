@@ -40,12 +40,12 @@ const Gallery = () => {
             <GalleryItem delay={1.2} row={2} col={1} img={arch3} />
             <GalleryItem delay={1.5} row={1} col={3} img={arch2} />
             <GalleryItem delay={1.7} row={3} col={1} img={arch2} />
-            <GalleryItem delay={2} row={1} col={1} img={arch1} />
+            <GalleryItem delay={1} row={1} col={1} img={arch1} />
             <GalleryItem delay={1.2} row={1} col={1} img={arch4} />
             <GalleryItem delay={1.4} row={1} col={3} img={arch2} />
             <GalleryItem delay={1.3} row={1} col={2} img={arch5} />
             <GalleryItem delay={1.1} row={2} col={1} img={arch6} />
-            <GalleryItem delay={1.6} row={1} col={3} img={arch2} />
+            <GalleryItem delay={1.4} row={1} col={3} img={arch2} />
          </div>
       </div>
    );

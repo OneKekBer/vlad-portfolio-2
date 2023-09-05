@@ -6,16 +6,14 @@ import { AnimatePresence } from "framer-motion";
 
 function App() {
    return (
-      <div>
-         <BrowserRouter>
-            <AnimatePresence mode="wait">
-               <Routes>
-                  <Route path="/" element={<Home />} />
-                  <Route path="/nature" element={<Nature />} />
-               </Routes>
-            </AnimatePresence>
-         </BrowserRouter>
-      </div>
+      <BrowserRouter>
+         <AnimatePresence mode="wait">
+            <Routes>
+               <Route path="/" element={<Home />} />
+               <Route path="/nature" element={<Nature />} />
+            </Routes>
+         </AnimatePresence>
+      </BrowserRouter>
    );
 }
 
