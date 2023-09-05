@@ -1,5 +1,5 @@
 // import { styles } from "../styles/styles";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../index.css";
 
 const Header = () => {
@@ -14,15 +14,15 @@ const Header = () => {
                </a>
             </div>
             <nav className="header__nav flex gap-10 justify-between">
-               <a
-                  href=""
-                  onClick={() => {
-                     navigate("/nature");
-                  }}
+               <Link
+                  to="/nature"
+                  // onClick={() => {
+                  //    navigate("/nature");
+                  // }}
                   className={`header__link`}
                >
                   Nature
-               </a>
+               </Link>
                <a href="" className="header__link">
                   Arch
                </a>
