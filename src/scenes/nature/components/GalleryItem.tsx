@@ -7,10 +7,11 @@ import {
 import { useEffect, useRef } from "react";
 
 interface Props {
-   col: number | undefined;
-   row: number | undefined;
-   delay: number | undefined;
+   col?: number;
+   row?: number;
+   delay?: number;
    img: string;
+   func?: () => void; // Тип для функции func
 }
 
 const variants = {
@@ -18,7 +19,13 @@ const variants = {
    visible: { opacity: 1, y: 0 },
 };
 
-const GalleryItem = ({ col = 3, row = 2, img, delay = 1 }: Props) => {
+const GalleryItem: React.FC<Props> = ({
+   col = 3,
+   row = 2,
+   img,
+   func,
+   delay = 1,
+}: Props) => {
    const column = "span " + col;
    const rows = "span " + row;
    const ref = useRef(null);
@@ -35,12 +42,13 @@ const GalleryItem = ({ col = 3, row = 2, img, delay = 1 }: Props) => {
    return (
       <AnimatePresence mode="wait">
          <motion.div
+            onClick={func}
             ref={ref}
             variants={variants}
             initial="hidden"
             animate={animation}
             transition={{ duration: 1, delay: delay, staggerChildren: 0.5 }}
-            className={`item h-[90vh] md:h-[70vh]  `}
+            className={`item h-[90vh] cursor-pointer hover:brightness-90 duration-300 md:h-[70vh]  `}
             style={{ gridColumn: column, gridRow: rows }}
          >
             <img
