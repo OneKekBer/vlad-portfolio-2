@@ -1,12 +1,14 @@
 import Header from "../../common/Header";
 import Gallery from "./components/Gallery";
-import InitialPageAnimation from "src/common/InitialPageAnimation";
+// import InitialPageAnimation from "src/common/InitialPageAnimation";
 const Nature = () => {
    return (
-      <InitialPageAnimation>
+      // <InitialPageAnimation>
+      <div>
          <Header />
          <Gallery />
-      </InitialPageAnimation>
+      </div>
+      // </InitialPageAnimation>
    );
 };
 
