@@ -41,7 +41,7 @@ const GalleryItem = ({ col = 3, row = 2, img, delay = 1 }: Props) => {
             animate={animation}
             transition={{ duration: 1, delay: delay, staggerChildren: 0.5 }}
             className={`item h-[90vh] md:h-[70vh]  `}
-            style={{ gridColumn: column }}
+            style={{ gridColumn: column, gridRow: rows }}
          >
             <img
                className="w-full h-full object-cover object-center"

@@ -37,8 +37,8 @@ const Gallery = () => {
       <div>
          <div className="wrapper gap-1 md:gap-5 mt-[150px] grid-rows-2 grid grid-cols-1 md:grid-cols-3">
             <GalleryItem col={2} row={1} img={arch1} delay={0.2} />
-            <GalleryItem col={1} row={2} img={arch3} delay={0.4} />
-            <GalleryItem col={3} row={2} img={arch2} delay={0.6} />
+            <GalleryItem col={1} row={1} img={arch3} delay={0.4} />
+            <GalleryItem col={3} row={1} img={arch2} delay={0.6} />
             <GalleryItem col={1} row={1} img={arch2} delay={0.8} />
             <GalleryItem col={1} row={1} img={arch1} delay={1.0} />
             <GalleryItem col={1} row={1} img={arch4} delay={1.2} />
