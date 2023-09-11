@@ -16,7 +16,7 @@ const NavCard = ({ img, title, link }: Props) => {
       <motion.div
          transition={{ duration: 0.5 }}
          variants={item}
-         className="nav__box w-[300px] h-[50vh]"
+         className="nav__box w-full p-2 h-[50vh]"
       >
          <div
             onClick={() => {
@@ -26,7 +26,7 @@ const NavCard = ({ img, title, link }: Props) => {
          >
             <img src={img} className=" object-cover h-full" alt="" />
          </div>
-         <h4 className="text">{title}</h4>
+         <h4 className="text mt-2">{title}</h4>
       </motion.div>
    );
 };

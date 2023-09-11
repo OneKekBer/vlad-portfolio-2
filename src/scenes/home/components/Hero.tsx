@@ -21,7 +21,10 @@ const Hero = () => {
                   архитектура могут подарить.
                </p>
                <div className="flex justify-center md:justify-start gap-5 mt-9">
-                  <a href="" className="icon">
+                  <a
+                     href=""
+                     className="hover:bg-gray-200 p-1  rounded-full duration-300  icon"
+                  >
                      <svg
                         width="800px"
                         height="800px"
@@ -37,13 +40,22 @@ const Hero = () => {
                         />
                      </svg>
                   </a>
-                  <a href="" className="icon">
+                  <a
+                     href=""
+                     className="hover:bg-gray-200 p-1  rounded-full duration-300 icon"
+                  >
                      <img src={tt} alt="" />
                   </a>
-                  <a href="" className="icon">
+                  <a
+                     href=""
+                     className="hover:bg-gray-200 p-1  rounded-full duration-300 icon"
+                  >
                      <img src={inst} alt="" />
                   </a>
-                  <a href="" className="icon">
+                  <a
+                     href=""
+                     className="hover:bg-gray-200 p-1  rounded-full duration-300 icon"
+                  >
                      <img src={tg} alt="" />
                   </a>
                </div>

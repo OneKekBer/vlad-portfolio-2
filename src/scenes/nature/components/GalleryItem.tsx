@@ -11,6 +11,7 @@ interface Props {
    row?: number;
    delay?: number;
    img: string;
+   isMobile: boolean;
    func?: () => void; // Тип для функции func
 }
 
@@ -25,6 +26,7 @@ const GalleryItem: React.FC<Props> = ({
    img,
    func,
    delay = 1,
+   isMobile = false,
 }: Props) => {
    const column = "span " + col;
    const rows = "span " + row;
@@ -35,7 +37,6 @@ const GalleryItem: React.FC<Props> = ({
    useEffect(() => {
       if (isInView) {
          animation.start("visible");
-         console.log("вижу его!");
       }
    }, [isInView, animation]);
 
@@ -48,8 +49,10 @@ const GalleryItem: React.FC<Props> = ({
             initial="hidden"
             animate={animation}
             transition={{ duration: 1, delay: delay, staggerChildren: 0.5 }}
-            className={`item h-[90vh] cursor-pointer hover:brightness-90 duration-300 md:h-[70vh]  `}
-            style={{ gridColumn: column, gridRow: rows }}
+            className={`item h-[90vh] cursor-pointer hover:brightness-90 duration-300 md:h-[70vh] ${
+               isMobile ? "md:col-span-2" : "" // Установка gridColumn в зависимости от isMobile
+            }`}
+            style={isMobile ? {} : { gridColumn: column, gridRow: rows }}
          >
             <img
                className="w-full h-full object-cover object-center"

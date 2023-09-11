@@ -13,7 +13,7 @@ const Header = () => {
                   logo
                </a>
             </div>
-            <nav className="header__nav flex gap-10 justify-between">
+            {/* <nav className="header__nav flex gap-10 justify-between">
                <Link
                   to="/nature"
                   // onClick={() => {
@@ -29,7 +29,7 @@ const Header = () => {
                <a href="" className="header__link">
                   Lagoon
                </a>
-            </nav>
+            </nav> */}
          </div>
       </div>
    );
