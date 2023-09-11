@@ -36,10 +36,8 @@ const Navigation = () => {
             className="wrapper grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center "
          >
             <NavCard img={img1} title="explore nature " link="/nature" />
-            <NavCard img={img2} title="explore" link="" />
-            <NavCard img={img3} title="explore" link="" />
-            <NavCard img={img3} title="explore" link="" />
-            <NavCard img={img3} title="explore" link="" />
+            <NavCard img={img2} title="explore" link="/BW" />
+            <NavCard img={img3} title="explore" link="/night" />
             <NavCard img={img3} title="explore" link="" />
             <NavCard img={img3} title="explore" link="" />
             <NavCard img={img3} title="explore" link="" />

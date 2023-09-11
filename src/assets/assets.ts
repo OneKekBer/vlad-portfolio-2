@@ -14,6 +14,20 @@ import build13 from "./img/build/013.jpg";
 import build14 from "./img/build/014.jpg";
 import build15 from "./img/build/015.jpg";
 import build16 from "./img/build/016.jpg";
+import bw1 from "./img/bw/001.jpg";
+import bw2 from "./img/bw/002.jpg";
+import bw3 from "./img/bw/003.jpg";
+import bw4 from "./img/bw/004.jpg";
+import bw5 from "./img/bw/005.jpg";
+import bw6 from "./img/bw/006.jpg";
+import bw7 from "./img/bw/007.jpg";
+import bw8 from "./img/bw/008.jpg";
+import bw9 from "./img/bw/009.jpg";
+import bw10 from "./img/bw/010.jpg";
+import bw11 from "./img/bw/011.jpg";
+import bw12 from "./img/bw/012.jpg";
+import bw13 from "./img/bw/013.jpg";
+import bw14 from "./img/bw/014.jpg";
 import night1 from "./img/night/001.jpg";
 import night2 from "./img/night/002.jpg";
 import night3 from "./img/night/003.jpg";
@@ -39,4 +53,21 @@ export const buildGal = [
    build16,
 ];
 
-export const nightGal = { night1, night2, night3, night4, night5 };
+export const nightGal = [night1, night2, night3, night4, night5];
+
+export const BWGal = [
+   bw1,
+   bw2,
+   bw3,
+   bw4,
+   bw5,
+   bw6,
+   bw7,
+   bw8,
+   bw9,
+   bw10,
+   bw11,
+   bw12,
+   bw13,
+   bw14,
+];

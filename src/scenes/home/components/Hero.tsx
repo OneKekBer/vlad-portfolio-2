@@ -8,7 +8,7 @@ import CameraCanvas from "src/common/canvas/Camera";
 const Hero = () => {
    return (
       <div className="hero">
-         <div className="wrapper text-center md:text-left mt-[80px] md:mt-1 relative w-full h-screen mb-[10vh] md:mb-2 flex-col-reverse md:flex-row flex items-center  gap-10 ">
+         <div className="wrapper  text-center md:text-left mt-[80px] md:mt-1 relative w-full h-screen mb-[10vh] md:mb-2 flex-col-reverse md:flex-row flex items-center  gap-10 ">
             <motion.div className=" w-full md:w-1/2">
                <h1>Привет, я Влад и я фотограф</h1>
                <p>
@@ -41,7 +41,8 @@ const Hero = () => {
                      </svg>
                   </a>
                   <a
-                     href=""
+                     href="https://www.tiktok.com/@somejunkphotos"
+                     target="_blank"
                      className="hover:bg-gray-200 p-1  rounded-full duration-300 icon"
                   >
                      <img src={tt} alt="" />

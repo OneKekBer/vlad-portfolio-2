@@ -3,6 +3,8 @@ import Nature from "./scenes/nature/Nature";
 import Home from "./scenes/home/Home";
 import { AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
+import BW from "./scenes/galleryScenes/BW";
+import Night from "./scenes/galleryScenes/Night";
 
 function ScrollToTop() {
    const { pathname } = useLocation();
@@ -22,6 +24,8 @@ function App() {
             <Routes>
                <Route path="/" element={<Home />} />
                <Route path="/nature" element={<Nature />} />
+               <Route path="/BW" element={<BW />} />
+               <Route path="/night" element={<Night />} />
             </Routes>
          </AnimatePresence>
       </BrowserRouter>
